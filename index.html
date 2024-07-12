@@ -4,241 +4,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables</title>
+    <title>Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <center>
-        <h1>TABLES IN HTML</h1>
-    </center>
+
+    <img src="image/logo.png" alt="Logo">
+    <h1>Student Registration Form</h1>
     <hr>
-    <center>
-        <h1>Employee Information</h1>
-    </center>
+    <form>
+        <p>
+            <label for="1st name">FIRST NAME</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" id="1st name" maxlength="30" required> (Max 30 characters a-z and A-Z)
+        </p>
+        <p>
+            <label for="2nd name">LAST NAME</label> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="2nd name" maxlength="30" required> (Max 30 characters a-z and A-Z)
+        </p>
 
-    <table width="100%" border="2">
-        <tr class="box">
-            <th>Employee ID and Name</th>
-            <th>Position</th>
-            <th>Department</th>
-            <th>Salary</th>
-            <th>Joining Date</th>
+        <p>
+            <label for="">Date Of Birth</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="dob_day" id="">
+                <option value="" disabled selected>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+            </select>
 
-        </tr>
-        <tr>
-            <td>101 - John Doe</td>
-            <td>Manager</td>
-            <td>Sales</td>
-            <td>$ 65,000</td>
-            <td>2022-01-15</td>
-        </tr>
-        <tr>
-            <td>102 - Jan Smith</td>
-            <td>Analyst</td>
-            <td>Finance</td>
-            <td>$ 50,000</td>
-            <td>2022-03-10</td>
-        </tr>
-        <tr>
-            <td>103 - Michael Johnson </td>
-            <td>Developer</td>
-            <td>IT</td>
-            <td>$ 55,000</td>
-            <td>2022-02-05</td>
-        </tr>
-        <tr>
-            <td colspan="3">Total Employees</td>
-            <td colspan="2">3</td>
+            <select name="dob_month" id="">
+                <option value="" disabled selected>Month</option>
+                <option value="january">january</option>
+                <option value="february">february</option>
+                <option value="march">march</option>
+                <option value="april">april</option>
+                <option value="may">may</option>
+                <option value="june">june</option>
+                <option value="july">july</option>
+                <option value="august">august</option>
+                <option value="september">september</option>
+                <option value="october">october</option>
+                <option value="november">november</option>
+                <option value="december">december</option>
+            </select>
+
+            <select name="dob_year" id="">
+                <option value="" disabled selected>year</option>
+                <option value="">2000</option>
+                <option value="">2001</option>
+                <option value="">2002</option>
+                <option value="">2003</option>
+                <option value="">2004</option>
+                <option value="">2005</option>
+                <option value="">2006</option>
+                <option value="">2007</option>
+                <option value="">2008</option>
+                <option value="">2009</option>
+                <option value="">2010</option>
+                <option value="">2011</option>
+                <option value="">2012</option>
+                <option value="">2013</option>
+                <option value="">2014</option>
+                <option value="">2015</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="mail"> EMAIL ID
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" id="mail"></label>
+        </p>
+
+        <p>
+            <label for="num">MOBILE NUMBER &nbsp;<input type="number" id="num">(10 Digit number)</label>
+        </p>
+
+        <p>GENDER
+            &nbsp; &nbsp; &nbsp;Male</label><input type="radio" name="gender" value="male">
+            Female<input type="radio" name="gender" value="female">
+        </p>
+
+        <p><label for="add">Address</label>
+            <textarea name="address" id="add" cols="35" rows="5"></textarea>
+        </p>
+
+        <p>
+            <label for="city">CITY &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="text" id="city"> (Max 30 characters a-z and A-Z) </label>
+        </p>
+
+        <p>
+            <label for="code">PIN CODE &nbsp;</label>
+            <input type="number" id="code">(6 Digit number)
+        </p>
+
+        <p>
+            <label for="state">STATE&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input type="text" id="state"> (Max 30 characters a-z and A-Z)
+        </p>
+
+        <p>
+            <label for="cntry">COUNTRY&nbsp;&nbsp;</label>
+            <input type="search" value="Pakistan" id="cntry">
+        </p>
+
+        <p>HOBBIES
+
+            Drawing<input type="checkbox">
+            Singing<input type="checkbox">
+            Dancing<input type="checkbox">
+            Sketching<input type="checkbox">
+            Others<input type="checkbox"> <input type="text">
+        </p>
+
+        <table>
+            <tr>
+                <th>Qualification &nbsp;&nbsp;&nbsp;</th>
+                <td>SI.No</td>
+                <td>Examination</td>
+                <td>
+                    <center>Board</center>
+                </td>
+                <td>
+                    <center>Percentage</center>
+                </td>
+                <td>
+                    <center>Year of passing</center>
+                </td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text"></td>
+                <td><input type="number" pattern="Digit"></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <center>(10 char max)</center>
+                </td>
+                <td>
+                    <center>(upto 2 decimal)</center>
+                </td>
+            </tr>
+        </table>
+
+        <label for="">Courses <br> applied for</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        BCA<input type="radio" name="select" value="BCA">
+        B.Com<input type="radio" name="select" value="B.Com">
+        B.Sc<input type="radio" name="select" value="B.Sc">
+        B.A<input type="radio" name="select" value="B.A">
+
+        <br>
+        <br>
+        <center>
+            <input type="button" name="Submit" value="Submit">
+            <input type="button" name="Reset" value="Reset">
+
+        </center>
 
 
-
-        </tr>
-        <tr>
-            <td colspan="3">Average Salary</td>
-            <td>$ 56,666.67</td>
-            <td></td>
-        </tr>
-    </table>
-    <br>
-    <br>
-    <center>
-        <h1>TIME TABLE</h1>
-    </center>
-
-
-
-
-    <table width="100%" border="2">
-        <tr>
-
-            <th>Day/Period</th>
-            <th>I 9:10-10:20</th>
-            <th>II 10:20-11:10</th>
-            <th>III 12:00-12:40</th>
-            <th>12:00-12:40</th>
-            <th>IV 12:40-1:30</th>
-            <th>V 1:30-2:20</th>
-            <th>VI 2:20-3:10</th>
-            <th>VII 3:10-4:00</th>
-
-        </tr>
-
-        <tr>
-            <td>Monday</td>
-            <td>Eng</td>
-            <td>Math</td>
-            <td>chem</td>
-            <td rowspan="5">
-                <center>LUNCH</center>
-            </td>
-
-            <td colspan="3">LAB</td>
-            <td>Phy</td>
-        </tr>
-        <tr>
-            <td>Tuesday</td>
-            <td colspan="3">LAB</td>
-
-            <td>Eng</td>
-            <td>Chem</td>
-            <td>Math</td>
-            <td>Sports</td>
-        </tr>
-        <tr>
-            <td>Wednesday</td>
-            <td>Math</td>
-            <td>Phy</td>
-            <td>Eng</td>
-
-            <td>Chem</td>
-            <td colspan="3">LIBRARY</td>
-        </tr>
-        <tr>
-            <td>thursday</td>
-            <td>phy</td>
-            <td>Eng</td>
-            <td>chem</td>
-
-            <td colspan="3">Lab</td>
-            <td>Math</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>phy</td>
-            <td>Eng</td>
-            <td>chem</td>
-
-            <td colspan="3">Lab</td>
-            <td>Math</td>
-        </tr>
-
-    </table>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1>
-        <center>Seminar Schedule</center>
-    </h1>
-
-    <table width="100%" border="2">
-        <tr>
-            <th rowspan="3">Day</th>
-            <th colspan="4">Seminar</th>
-
-
-        </tr>
-
-        <tr>
-            <th colspan="2">Schedule</th>
-            <th colspan="4" rowspan="2">Topic</th>
-        </tr>
-
-        <tr>
-            <th>Begin</th>
-            <th>End</th>
-        </tr>
-
-
-        <tr>
-
-            <td rowspan="2">
-                <center>Monday</center>
-            </td>
-            <td rowspan="2">
-                <center>8:00 a.m.</center>
-            </td>
-            <td rowspan="2">
-                <center>5:00 p.m.</center>
-            </td>
-            <td>
-                <center>Introduction to XML</center>
-            </td>
-
-
-        </tr>
-        <tr>
-            <td>
-                <center>Validity:DTD and Relax NG</center>
-            </td>
-        </tr>
-
-        <tr>
-            <td rowspan="3">
-                <center>Tuesday</center>
-            </td>
-            <td>
-                <center>8:00 a.m. </center>
-            </td>
-            <td>
-                <center>11:00 a.m.</center>
-            </td>
-            <td>
-                <center>X path</center>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <center>11:00 a.m.</center>
-            </td>
-            <td>
-                <center>2:00 p.m.</center>
-            </td>
-            <td rowspan="2">
-                <center>XSL Transformations</center>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <center>2:00 p.m.</center>
-            </td>
-            <td>
-                <center>5:00 p.m.</center>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <center>Wednesday</center>
-            </td>
-            <td>
-                <center>8:00 a.m.</center>
-            </td>
-            <td>
-                <center>12:00 p.m.</center>
-            </td>
-            <td>
-                <center>XML Formating</center>
-            </td>
-        </tr>
-
-    </table>
-    <br>
-    <br>
-    <br>
+    </form>
 
 </body>
 
